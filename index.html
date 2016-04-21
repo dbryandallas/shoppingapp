@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping List</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+        <link rel="shorcut icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <meta name="viewport" content="width=device-width">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="row header_row">
+                <h1 class="title">Shopping List</h1>
+                <div class="cart foundicon-cart"></div>
+            </div>
+            <div class="row">
+                <input type="text" id="new_item" placeholder="Beer, Ice Cream, Bread, etc." autofocus />
+            </div>
+            <div class="row">
+                <ul class= "items">
+                </ul>
+            </div>
+            <div id="footer" class="row">
+                <a href="#" id="check_all" class="multicontrol">Mark all checked</a>
+                <a href="#" id="remove_all" class="multicontrol">Remove all checked</a>
+                <div id="item_count">5 item(s)</div>
+            </div>
+        </div>
+        <script id="list_item_template" type="text/template">
+                <li class="item">
+                    <div class="control remover"><span class="fa fa-times"></span></div>
+                    <div class="control checkbox"><span class="fa fa-check"></span></div>
+                    <span class="item_text item-complete" contenteditable="true"></span>
+                </li>
+        </script>
+        <script type="text/javascript" src="js/application.js"></script>
+    </body>
+</html>
+
+
